@@ -1,38 +1,205 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header ul li{
+  @apply px-2;
+}
+.bg-primary{
+  background:rgb(85,81,227);
+}
+.bg-secondary{
+  background: #2b2d77;
+}
+.mobile-nav{
+  @apply fixed top-12 left-0 bg-gray-800 w-full h-1/4;
+}
+.mobile-nav  li{
+  @apply border-b-2 text-center w-full h-full 
+}
+.project-desc {
+  @apply absolute left-0 right-0 -bottom-0 top-0 bg-secondary opacity-0 duration-500 hover:opacity-100 py-2;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn {
+  @apply bg-primary px-5 py-4 font-bold hover:border-2 border-white rounded;
+}
+.btn1 {
+  @apply bg-primary px-3 py-4 font-bold hover:border-2 border-white rounded text-center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+  scroll-behavior: smooth;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contact{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.getintouch{
+  padding-left: 2rem;
+  font-size: 1rem;
+}
+.contactpadding{
+  margin: 3rem 0rem 3rem 0rem;
+  padding: 0rem 3rem;
+}
+.contactform{
+  width: 30rem;
+  height: fit-content;
+  position: relative;
+  margin: 2rem;
   color: white;
+  border-radius: 1rem;
+  /* background-color:primary; */
+}
+.contacttitle{
+  width: 100%;
+  text-align: center;
+  font-size: clamp(1rem, 20vw, 0.5rem);
+}
+input,textarea{
+  border-radius: 0.3rem;
+  width: 100%;
+  margin: 0.7rem;
+  color: whitesmoke;
+  border: #130a26;
+  padding: 0.5rem;
+  background-color: #333333;
+}
+textarea{
+  height: 10rem;
+  max-height: 100%; 
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 5rem;
+}
+.field{
+  margin-top: 1.5rem;
+}
+.contactbutton{
+  margin-top: 1.5rem;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+.contactbtn{
+  width : 20%;
+  height: 2rem;
+  min-width: 4rem;
+  max-width: 6rem;
+  border-radius: 20px;
+}
+@media(max-width : 600px){
+  .contactform{
+      width: 90%;
+  }
+}
+.experience__container{
+  display: grid;
+   /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+ /* grid-template-columns: 3fr 3fr 3fr 3fr;    */
+  /* grid-template-columns: auto 3fr;
+  grid-template-rows: auto 3fr; */
+  gap: 3rem;
+  row-gap: 4rem;
+  column-gap: 4rem;
+}
+/* .experience__container{
+  display: grid;
+  text-align: center;
+  grid-template-columns: auto 1fr;
+  gap: 2;   
+}  */
+
+.experience__container > div {
+  display: grid;
+  overflow: auto;
+  text-align: center;
+  background: var(--color-primary-verient);
+  padding: 1rem 4rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
 }
 
-.App-link {
-  color: #61dafb;
+.experience__container{
+  display: grid;
+  /* background-color:"secondary"; */
+  border-color: var(--color-bg-2);
+  cursor: default;
+  box-shadow: 4px 5px 5px rgba(255, 255, 255, 0.5);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* .experience__container > div h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-white);
+} */
+
+/*======================== Experience content ========================== */
+.experience__content {
+  display: grid;   
+  text-align: center; 
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+  /* row-gap: 4rem;
+  column-gap: 4rem; */
+
+}
+
+.experience__detail {
+  /* display: flex; */
+  /* gap: 2rem; */
+}
+
+
+/* ===================== Media Queries (Medium Device) ====================== */
+@media screen and (max-width: 1024px) {
+  .experience__container{
+      grid-template-columns: 1fr;
   }
-  to {
-    transform: rotate(360deg);
+  .experience__container > div {
+      width: 80%;
+      padding: 2rem;
+      margin: 0 auto;
+  }
+  .experience__content{
+      padding: 1rem;
+  }
+
+}
+.back{
+  background-color:#8c5df8;
+}
+
+/* .custom-violet {
+  color:#2b2d77;
+} */
+
+/* ===================== Media Queries (Medium Device) ====================== */
+@media screen and (max-width: 600px) {
+  .experience__container{
+      gap: 1rem;
+      
+  }
+  .experience__container > {
+      width: 100%;
+      padding: 2rem 1rem;
   }
 }
+
+
+
+
+
+
+
+
+
+/* @media(max-width : 70rem){
+  .contactform{
+      width: 45%;
+  }
+} */
