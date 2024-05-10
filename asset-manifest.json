@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.3818c828.css",
+    "main.js": "/Portfolio/static/js/main.c041b1a5.js",
+    "static/media/Room-Booking.png": "/Portfolio/static/media/Room-Booking.5645e55c591acac0de0c.png",
+    "static/media/Youtube-clone.png": "/Portfolio/static/media/Youtube-clone.ad137f3c16111745af8f.png",
+    "static/media/about.png": "/Portfolio/static/media/about.619ff0b319a55d0c05b1.png",
+    "static/media/hero.png": "/Portfolio/static/media/hero.f14f30c6d01a97df04f6.png",
+    "static/media/Group-chat.png": "/Portfolio/static/media/Group-chat.3e2ee053aeb0620af436.png",
+    "static/media/resume.jpg": "/Portfolio/static/media/resume.40d9ec3d0701d254f50f.jpg",
+    "static/media/Chat-Application.png": "/Portfolio/static/media/Chat-Application.fc48e246c79282d45cb9.png",
+    "static/media/AK-Resume.pdf": "/Portfolio/static/media/AK-Resume.94e632e5f36577f126c7.pdf",
+    "static/media/Book-add.png": "/Portfolio/static/media/Book-add.4d3c10e6cd6059822b1e.png",
+    "static/media/Google-clone.png": "/Portfolio/static/media/Google-clone.b37fc649a98357f66a92.png",
+    "index.html": "/Portfolio/index.html",
+    "main.3818c828.css.map": "/Portfolio/static/css/main.3818c828.css.map",
+    "main.c041b1a5.js.map": "/Portfolio/static/js/main.c041b1a5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3818c828.css",
+    "static/js/main.c041b1a5.js"
+  ]
+}
