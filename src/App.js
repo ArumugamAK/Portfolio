@@ -27,7 +27,7 @@ function App() {
       <Resume/>
       <Contact/>
       <Footer/>
-      {/* <EmailForm/>
+      {/* <EmailForm/>  
       <Email/> */}
   </div>
   );
