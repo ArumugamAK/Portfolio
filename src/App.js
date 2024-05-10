@@ -11,11 +11,13 @@ import { Hero } from './component/Hero';
 import { Navbar } from './component/Navbar';
 import { Project } from './component/Project';
 import { Resume } from './component/Resume';
+import Lifecycle, {Sampl} from './component/lifecycle';
 // import { Form } from './component/Form';
 
 function App() {
   return (
     <div>
+      {/* <Lifecycle/> */}
       <Navbar/>
       <Hero/> 
       <About/>
@@ -25,8 +27,8 @@ function App() {
       <Resume/>
       <Contact/>
       <Footer/>
-      {/* <EmailForm/> */}
-      {/* <Email/> */}
+      {/* <EmailForm/>
+      <Email/> */}
   </div>
   );
 }
